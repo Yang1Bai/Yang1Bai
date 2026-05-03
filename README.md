@@ -20,7 +20,7 @@ Researcher at the **UofT Acceleration Consortium** — building self-driving lab
 ---
 
 <p align="center">
-  <img height="140" src="https://github-readme-stats.vercel.app/api?username=Yang1Bai&show_icons=true&hide_rank=true&theme=tokyonight&count_private=true" />
+  <img height="140" src="https://github-readme-stats.vercel.app/api?username=Yang1Bai&show_icons=true&hide_rank=true&theme=buefy&count_private=true" />
   &nbsp;
-  <img height="140" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yang1Bai&layout=compact&theme=tokyonight" />
+  <img height="140" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yang1Bai&layout=compact&theme=buefy" />
 </p>
