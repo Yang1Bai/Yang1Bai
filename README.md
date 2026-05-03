@@ -1,10 +1,6 @@
 <!-- Profile README for Yang1Bai/Yang1Bai -->
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Yang1Bai/Yang1Bai/main/assets/banner.png" alt="Yang Bai - Self-Driving Labs · ML for Materials Science · UofT" width="100%" />
-</p>
-
-<p align="center">
   <a href="https://acceleration.utoronto.ca/people/yang-bai">🏫 UofT</a>
   &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/yang-bai-b4b761140/">💼 LinkedIn</a>
