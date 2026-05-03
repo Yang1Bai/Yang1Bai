@@ -1,9 +1,7 @@
 <!-- Profile README for Yang1Bai/Yang1Bai -->
 
-<h1 align="center">Yang Bai</h1>
-
 <p align="center">
-  Self-Driving Labs &nbsp;·&nbsp; ML for Materials &nbsp;·&nbsp; UofT Acceleration Consortium
+  <img src="https://raw.githubusercontent.com/Yang1Bai/Yang1Bai/main/assets/banner.png" alt="Yang Bai - Self-Driving Labs · ML for Materials Science · UofT" width="100%" />
 </p>
 
 <p align="center">
