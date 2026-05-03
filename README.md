@@ -45,15 +45,3 @@ Researcher at the **UofT Acceleration Consortium** — building self-driving lab
 ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=111)
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
 ![ROS](https://img.shields.io/badge/ROS-22314E?logo=ros&logoColor=white)
-
-<br>
-
----
-
-### GitHub Stats
-
-<p align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api?username=Yang1Bai&show_icons=true&hide_rank=true&theme=default&bg_color=ffffff&title_color=333333&text_color=555555&icon_color=0969da&count_private=true" />
-  &nbsp;&nbsp;
-  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yang1Bai&layout=compact&theme=default&bg_color=ffffff&title_color=333333&text_color=555555" />
-</p>
