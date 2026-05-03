@@ -38,9 +38,9 @@ Currently focused on: autonomous catalyst discovery, representation learning for
 
 | Project | Description | Stack |
 |---|---|---|
-| 🤖 [catalyst-OT2-xArm](https://github.com/Yang1Bai/catalyst-OT2-xArm) | Self-driving lab workflow orchestrator integrating OT-2 + xArm robotics | Python |
-| 🛡️ [WATCHDOG](https://github.com/Yang1Bai/WATCHDOG) | Modular real-time digital twins for fault monitoring in robotic lab workflows | Python |
-| ⚗️ [SDL1 Electrodeposition](https://github.com/Yang1Bai/SDL1_OpenTron_electrodeposition) | Automated electrodeposition protocol on OpenTron OT-2 | Python |
+| 🤖 [catalyst-OT2-xArm](https://github.com/EshanSankar/catalyst-OT2-xArm) | Self-driving lab workflow orchestrator integrating OT-2 + xArm robotics | Python |
+| 🛡️ [WATCHDOG](https://github.com/EshanSankar/WATCHDOG) | Modular real-time digital twins for fault monitoring in robotic lab workflows | Python |
+| ⚗️ [SDL1 Electrodeposition](https://github.com/AccelerationConsortium/SDL1_OpenTron_electrodeposition) | Automated electrodeposition protocol on OpenTron OT-2 | Python |
 | 📰 [AI Progress Tracker](https://github.com/Yang1Bai/ai-progress-site) | Daily AI news, leader viewpoints & AI4Science updates | HTML · JS |
 | 💰 [Finance Daily](https://github.com/Yang1Bai/finance-daily-site) | Auto-aggregated global market summary: indices, macro data, earnings | Python · HTML |
 | 🎙️ [Podcast Agent](https://github.com/Yang1Bai/podcast-agent) | 科研面对面 — automated academic podcast production workflow | Python · LLM |
