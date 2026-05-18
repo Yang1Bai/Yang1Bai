@@ -18,16 +18,6 @@ Researcher at the **UofT Acceleration Consortium** — building self-driving lab
 
 ---
 
-## 🔬 Research @ UofT Acceleration Consortium
-
-| | Project | Description |
-|---|---|---|
-| 🤖 | [catalyst-OT2-xArm](https://github.com/EshanSankar/catalyst-OT2-xArm) | Self-driving lab orchestrating OT-2 + xArm robotics for automated catalyst synthesis |
-| 🛡️ | [WATCHDOG](https://github.com/EshanSankar/WATCHDOG) | Real-time digital twins for robotic fault monitoring |
-| ⚗️ | [SDL1 Electrodeposition](https://github.com/AccelerationConsortium/SDL1_OpenTron_electrodeposition) | Fully automated electrodeposition on OpenTron OT-2 |
-
----
-
 ## 🛠️ Tech Stack
 
 **ML / Science**
