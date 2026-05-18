@@ -2,7 +2,7 @@
 
 Researcher at the **UofT Acceleration Consortium** — building self-driving labs and ML systems for materials science.
 
-[UofT Profile](https://acceleration.utoronto.ca/people/yang-bai) · [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=bL7U66AAAAAJ) · [LinkedIn](https://www.linkedin.com/in/yang-bai-b4b761140/) · [Email](mailto:yangb.bai@utoronto.ca) · 
+[UofT Profile](https://acceleration.utoronto.ca/people/yang-bai) · [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=bL7U66AAAAAJ) · [LinkedIn](https://www.linkedin.com/in/yang-bai-b4b761140/) · [Email](mailto:yangb.bai@utoronto.ca) 
 
 ---
 
