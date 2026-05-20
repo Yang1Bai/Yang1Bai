@@ -25,3 +25,19 @@ Staff Scientist at the **UofT Acceleration Consortium** — building self-drivin
 ---
 
 
+
+---
+
+### 你好，我是白杨 👋
+
+多伦多大学加速联盟（UofT Acceleration Consortium）科学家，专注于自驱动实验室与材料科学机器学习系统的研发。
+
+[UofT 主页](https://acceleration.utoronto.ca/people/yang-bai) · [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=bL7U66AAAAAJ) · [LinkedIn](https://www.linkedin.com/in/yang-bai-b4b761140/) · [邮件](mailto:yangb.bai@utoronto.ca)
+
+---
+
+#### 🛠️ 技术栈
+
+**机器学习 / 科学计算**：Python · PyTorch · scikit-learn · NumPy
+
+**基础设施 / 工具**：FastAPI · Docker · GitHub Actions
