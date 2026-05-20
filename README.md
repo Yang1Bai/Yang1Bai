@@ -6,18 +6,6 @@ Staff Scientist at the **UofT Acceleration Consortium** — building self-drivin
 
 ---
 
-## 🚀 Featured Projects
-
-| | Project | Description |
-|---|---|---|
-| 🌐 | [**AI Progress Tracker**](https://github.com/Yang1Bai/ai-progress-site) | Daily AI news · AI leaders' views · AI4Science updates — auto-aggregated every day |
-| 📄 | [**Nature Paper Hub**](https://github.com/Yang1Bai/nature-paper-hub) | End-to-end writing assistant for Nature-series journals: journal selection → drafting → figures → citation check → submission |
-| 💰 | [**Finance Daily**](https://github.com/Yang1Bai/finance-daily-site) | Auto-aggregated global market summary: indices · macro data · earnings · central banks（每日金融市场自动汇总）|
-| 🎙️ | [**Podcast Agent**](https://github.com/Yang1Bai/podcast-agent) | Automated end-to-end academic podcast pipeline — script → voice → publish（科研面对面）|
-| 🔧 | [**Claw TSaver**](https://github.com/Yang1Bai/claw-tsaver) | MCP proxy that cuts tool call payloads by 90%+ via lazy expansion — for OpenClaw power users |
-
----
-
 ## 🛠️ Tech Stack
 
 **ML / Science**
