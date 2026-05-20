@@ -1,5 +1,7 @@
 ### Hi, I'm Yang Bai 👋
 
+![Profile Views](https://komarev.com/ghpvc/?username=Yang1Bai&color=0e75b6&style=flat-square)
+
 Staff Scientist at the **UofT Acceleration Consortium** — building self-driving labs and ML systems for materials science.
 
 [UofT Profile](https://acceleration.utoronto.ca/people/yang-bai) · [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=bL7U66AAAAAJ) · [LinkedIn](https://www.linkedin.com/in/yang-bai-b4b761140/) · [Email](mailto:yangb.bai@utoronto.ca) 
@@ -23,3 +25,7 @@ Staff Scientist at the **UofT Acceleration Consortium** — building self-drivin
 [![ROS](https://img.shields.io/badge/ROS-22314E?logo=ros&logoColor=white)](https://ros.org)
 
 ---
+
+## 📊 GitHub Stats
+
+![Yang's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Yang1Bai&show_icons=true&theme=default&hide_border=true&count_private=true)
