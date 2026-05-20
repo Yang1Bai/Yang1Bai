@@ -24,8 +24,4 @@ Staff Scientist at the **UofT Acceleration Consortium** — building self-drivin
 
 ---
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Yang1Bai&show_icons=true&theme=dark&hide_border=true&count_private=true" height="150"/>
-  &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yang1Bai&layout=compact&theme=dark&hide_border=true" height="150"/>
-</p>
+
