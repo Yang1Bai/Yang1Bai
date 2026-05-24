@@ -1,31 +1,32 @@
 ### Hi, I'm Yang Bai 👋
 
-![Profile Views](https://komarev.com/ghpvc/?username=Yang1Bai&color=0e75b6&style=flat-square)
+Staff Scientist at the **UofT Acceleration Consortium**, building self-driving labs and machine-learning systems for materials science.
 
-Staff Scientist at the **UofT Acceleration Consortium** — building self-driving labs and ML systems for materials science.
-
-[UofT Profile](https://acceleration.utoronto.ca/people/yang-bai) · [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=bL7U66AAAAAJ) · [LinkedIn](https://www.linkedin.com/in/yang-bai-b4b761140/) · [Email](mailto:yangb.bai@utoronto.ca) 
+[UofT Profile](https://acceleration.utoronto.ca/people/yang-bai) · [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=bL7U66AAAAAJ) · [LinkedIn](https://www.linkedin.com/in/yang-bai-b4b761140/) · [Email](mailto:yangb.bai@utoronto.ca)
 
 ---
 
-## 🛠️ Tech Stack
+## What I Build
 
-**ML / Science**
+- **Self-driving lab software** for experimental automation, data pipelines, and decision-making loops.
+- **AI for science and materials** workflows, from literature/news monitoring to research-data analysis.
+- **Scientific tooling** that helps researchers turn messy experimental outputs into interpretable signals.
 
-[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://python.org)
-[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
-[![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)](https://numpy.org)
+## Selected Projects
 
-**Infra / Tools**
+| Project | What it shows |
+| --- | --- |
+| [SciVizKit](https://github.com/Yang1Bai/SciVizKit) | Scientific visualization toolkit for choosing effective charts for research data. |
+| [video_darkness_analysis](https://github.com/Yang1Bai/video_darkness_analysis) | Computer-vision analysis for reaction videos, including darkness and foam quantification. |
+| [ai-progress-site](https://github.com/Yang1Bai/ai-progress-site) | Automated daily tracking of AI, AI4Science, and AI4Materials progress. |
+| [finance-daily-site](https://github.com/Yang1Bai/finance-daily-site) | Automated market-summary pipeline covering macro data, earnings, sectors, and news. |
+| [nature-paper-hub](https://github.com/Yang1Bai/nature-paper-hub) | AI-assisted workflow for journal selection, manuscript drafting, figures, citations, and reviewer response. |
+| [claw-tsaver](https://github.com/Yang1Bai/claw-tsaver) | MCP proxy for reducing tool-call payloads through lazy expansion. |
 
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=111)](https://kernel.org)
-[![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)](https://git-scm.com)
-[![ROS](https://img.shields.io/badge/ROS-22314E?logo=ros&logoColor=white)](https://ros.org)
+## Tools I Use Often
 
----
+Python · PyTorch · scikit-learn · NumPy · FastAPI · Linux · Git · ROS · computer vision · scientific automation
 
-## 📊 GitHub Stats
+## Current Interests
 
-![Yang's GitHub Stats](./github-stats.svg)
+Closed-loop experimentation · materials discovery · autonomous labs · AI research agents · scientific visualization
