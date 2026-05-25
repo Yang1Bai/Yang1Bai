@@ -4,6 +4,8 @@ Staff Scientist at the **UofT Acceleration Consortium**, building self-driving l
 
 [UofT Profile](https://acceleration.utoronto.ca/people/yang-bai) · [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=bL7U66AAAAAJ) · [LinkedIn](https://www.linkedin.com/in/yang-bai-b4b761140/) · [Email](mailto:yangb.bai@utoronto.ca)
 
+![Profile views](https://komarev.com/ghpvc/?username=Yang1Bai&label=Profile%20views&color=0e75b6&style=flat&v=2)
+
 ---
 
 ## What I Build
