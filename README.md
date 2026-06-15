@@ -8,6 +8,8 @@ Staff Scientist at the **UofT Acceleration Consortium**, building self-driving l
 
 ---
 
+🔭 **Currently experimenting:** [github-machine-beacon](https://github.com/Yang1Bai/github-machine-beacon) — making a repository maximally easy for crawlers, code indexers, and AI/LLM agents to discover and parse (llms.txt · sitemap · JSON-LD · a live machine-vs-human traffic split). Live: <https://beacon.ybliterature.com/>
+
 ## What I Build
 
 - **Self-driving lab software** for experimental automation, data pipelines, and decision-making loops.
@@ -33,4 +35,4 @@ Python · PyTorch · scikit-learn · NumPy · FastAPI · Linux · Git · ROS · 
 
 ## Current Interests
 
-Closed-loop experimentation · materials discovery · autonomous labs · AI research agents · scientific visualization
+Closed-loop experimentation · materials discovery · autonomous labs · AI research agents · scientific visualization · machine-readable & agent-friendly web
