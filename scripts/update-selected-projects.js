@@ -143,6 +143,24 @@ function escapeMarkdownCell(value) {
   return String(value).replace(/\|/g, "\\|").replace(/\n/g, " ");
 }
 
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function buildSignalTags(value) {
+  return String(value)
+    .split(",")
+    .map((signal) => signal.trim())
+    .filter(Boolean)
+    .slice(0, 3)
+    .map((signal) => `<code>${escapeHtml(signal)}</code>`)
+    .join(" ");
+}
+
 function scoreRepo(repo) {
   const featured = featuredProjects.get(repo.name);
   const pushedAt = new Date(repo.pushed_at || repo.updated_at || repo.created_at).getTime();
@@ -170,7 +188,7 @@ function featuredRank(repoName) {
 }
 
 function buildProjectBlock(repos) {
-  const rows = repos
+  const cards = repos
     .filter((repo) => !repo.fork && !repo.archived && repo.name !== username)
     .map((repo) => ({ repo, score: scoreRepo(repo) }))
     .sort(
@@ -184,16 +202,32 @@ function buildProjectBlock(repos) {
       const featured = featuredProjects.get(repo.name);
       const topics = featured?.signals || (repo.topics || []).slice(0, 3).join(", ") || repo.language || "research software";
       const description = featured?.description || cleanDescription(repo.description);
-      return `| [${escapeMarkdownCell(repo.name)}](${repo.html_url}) | ${escapeMarkdownCell(description)} | ${escapeMarkdownCell(topics)} |`;
+      return {
+        name: repo.name,
+        url: repo.html_url,
+        description,
+        topics,
+      };
     });
 
-  return [
-    startMarker,
-    "| Project | What it shows | Signals |",
-    "| --- | --- | --- |",
-    ...rows,
-    endMarker,
-  ].join("\n");
+  const rows = [];
+  for (let index = 0; index < cards.length; index += 2) {
+    const pair = cards.slice(index, index + 2);
+    rows.push("  <tr>");
+    pair.forEach((repo) => {
+      rows.push("    <td width=\"50%\" valign=\"top\">");
+      rows.push(`      <a href="${escapeHtml(repo.url)}"><strong>${escapeHtml(repo.name)}</strong></a><br>`);
+      rows.push(`      <sub>${escapeHtml(repo.description)}</sub><br>`);
+      rows.push(`      ${buildSignalTags(repo.topics)}`);
+      rows.push("    </td>");
+    });
+    if (pair.length === 1) {
+      rows.push("    <td width=\"50%\" valign=\"top\"></td>");
+    }
+    rows.push("  </tr>");
+  }
+
+  return [startMarker, "<table>", ...rows, "</table>", endMarker].join("\n");
 }
 
 async function main() {
