@@ -9,6 +9,76 @@ const token = process.env.GITHUB_TOKEN || "";
 const startMarker = "<!-- selected-projects:start -->";
 const endMarker = "<!-- selected-projects:end -->";
 
+const featuredOrder = [
+  "nature-paper-hub",
+  "SciVizKit",
+  "github-machine-beacon",
+  "codex-research-cli-toolkit",
+  "ai-progress-site",
+  "video_darkness_analysis",
+  "finance-daily-site",
+];
+
+const featuredProjects = new Map([
+  [
+    "nature-paper-hub",
+    {
+      boost: 120,
+      description:
+        "AI-assisted workflow for Nature-style manuscript planning, drafting, figures, citations, and reviewer responses",
+      signals: "AI agents, academic writing, materials science",
+    },
+  ],
+  [
+    "SciVizKit",
+    {
+      boost: 110,
+      description: "Scientific visualization toolkit for choosing and producing publication-ready charts",
+      signals: "data visualization, matplotlib, research",
+    },
+  ],
+  [
+    "github-machine-beacon",
+    {
+      boost: 100,
+      description: "Experiment in making repositories easier for crawlers, indexers, and AI agents to discover and parse",
+      signals: "llms.txt, JSON-LD, observability",
+    },
+  ],
+  [
+    "codex-research-cli-toolkit",
+    {
+      boost: 95,
+      description: "Windows-first CLI and MCP toolkit for academic research workflows with Codex",
+      signals: "PowerShell, MCP, research tooling",
+    },
+  ],
+  [
+    "ai-progress-site",
+    {
+      boost: 90,
+      description: "Daily AI progress monitor focused on leader views, AI news, AI4Science, and AI4Materials",
+      signals: "AI monitoring, automation, web publishing",
+    },
+  ],
+  [
+    "video_darkness_analysis",
+    {
+      boost: 85,
+      description: "Supporting code for reaction-video optical analysis, including darkness and foam quantification",
+      signals: "computer vision, materials science, Python",
+    },
+  ],
+  [
+    "finance-daily-site",
+    {
+      boost: 60,
+      description: "Automated market briefing pipeline across indices, macro, earnings, sectors, and central banks",
+      signals: "automation, market data, dashboards",
+    },
+  ],
+]);
+
 const topicWeights = new Map([
   ["materials-science", 25],
   ["ai4science", 25],
@@ -74,6 +144,7 @@ function escapeMarkdownCell(value) {
 }
 
 function scoreRepo(repo) {
+  const featured = featuredProjects.get(repo.name);
   const pushedAt = new Date(repo.pushed_at || repo.updated_at || repo.created_at).getTime();
   const daysOld = Math.max(0, (Date.now() - pushedAt) / 86400000);
   const recencyScore = Math.max(0, 45 - daysOld / 7);
@@ -90,18 +161,29 @@ function scoreRepo(repo) {
     "machine learning",
   ].reduce((sum, keyword) => sum + (description.includes(keyword) ? 8 : 0), 0);
 
-  return recencyScore + topicScore + keywordScore + repo.stargazers_count * 3;
+  return (featured?.boost || 0) + recencyScore + topicScore + keywordScore + repo.stargazers_count * 3;
+}
+
+function featuredRank(repoName) {
+  const rank = featuredOrder.indexOf(repoName);
+  return rank === -1 ? Number.POSITIVE_INFINITY : rank;
 }
 
 function buildProjectBlock(repos) {
   const rows = repos
     .filter((repo) => !repo.fork && !repo.archived && repo.name !== username)
     .map((repo) => ({ repo, score: scoreRepo(repo) }))
-    .sort((a, b) => b.score - a.score || new Date(b.repo.pushed_at) - new Date(a.repo.pushed_at))
+    .sort(
+      (a, b) =>
+        featuredRank(a.repo.name) - featuredRank(b.repo.name) ||
+        b.score - a.score ||
+        new Date(b.repo.pushed_at) - new Date(a.repo.pushed_at),
+    )
     .slice(0, projectLimit)
     .map(({ repo }) => {
-      const topics = (repo.topics || []).slice(0, 3).join(", ") || repo.language || "research software";
-      const description = cleanDescription(repo.description);
+      const featured = featuredProjects.get(repo.name);
+      const topics = featured?.signals || (repo.topics || []).slice(0, 3).join(", ") || repo.language || "research software";
+      const description = featured?.description || cleanDescription(repo.description);
       return `| [${escapeMarkdownCell(repo.name)}](${repo.html_url}) | ${escapeMarkdownCell(description)} | ${escapeMarkdownCell(topics)} |`;
     });
 
