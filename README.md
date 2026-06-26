@@ -1,5 +1,12 @@
+<h1 align="center">Yang Bai</h1>
+
 <p align="center">
-  <img src="assets/profile-banner.svg" alt="Yang Bai - self-driving labs for materials discovery" width="100%">
+  <strong>Self-driving labs / materials AI / research systems</strong>
+</p>
+
+<p align="center">
+  Staff Scientist at the UofT Acceleration Consortium.
+  I build closed-loop research systems for autonomous experimentation and agent-readable scientific tooling.
 </p>
 
 <p align="center">
@@ -7,10 +14,6 @@
   <a href="https://scholar.google.com/citations?hl=zh-CN&user=bL7U66AAAAAJ">Scholar</a> &middot;
   <a href="https://www.linkedin.com/in/yang-bai-b4b761140/">LinkedIn</a> &middot;
   <a href="mailto:yangb.bai@utoronto.ca">Email</a>
-</p>
-
-<p align="center">
-  I build closed-loop research systems for autonomous experimentation, materials AI, and agent-readable scientific tooling.
 </p>
 
 ## Selected
