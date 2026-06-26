@@ -2,7 +2,7 @@ const fs = require("fs");
 const https = require("https");
 
 const username = process.env.GITHUB_USERNAME || "Yang1Bai";
-const projectLimit = Number(process.env.PROJECT_LIMIT || 6);
+const projectLimit = Number(process.env.PROJECT_LIMIT || 4);
 const readmePath = process.env.README_PATH || "README.md";
 const token = process.env.GITHUB_TOKEN || "";
 
@@ -24,8 +24,7 @@ const featuredProjects = new Map([
     "nature-paper-hub",
     {
       boost: 120,
-      description:
-        "AI-assisted workflow for Nature-style manuscript planning, drafting, figures, citations, and reviewer responses",
+      description: "AI workflow for Nature-style writing",
       signals: "AI agents, academic writing, materials science",
     },
   ],
@@ -33,7 +32,7 @@ const featuredProjects = new Map([
     "SciVizKit",
     {
       boost: 110,
-      description: "Scientific visualization toolkit for choosing and producing publication-ready charts",
+      description: "publication-ready scientific visualization",
       signals: "data visualization, matplotlib, research",
     },
   ],
@@ -41,7 +40,7 @@ const featuredProjects = new Map([
     "github-machine-beacon",
     {
       boost: 100,
-      description: "Experiment in making repositories easier for crawlers, indexers, and AI agents to discover and parse",
+      description: "agent-readable repository discovery",
       signals: "llms.txt, JSON-LD, observability",
     },
   ],
@@ -49,7 +48,7 @@ const featuredProjects = new Map([
     "codex-research-cli-toolkit",
     {
       boost: 95,
-      description: "Windows-first CLI and MCP toolkit for academic research workflows with Codex",
+      description: "Windows-first research CLI and MCP tooling",
       signals: "PowerShell, MCP, research tooling",
     },
   ],
@@ -57,7 +56,7 @@ const featuredProjects = new Map([
     "ai-progress-site",
     {
       boost: 90,
-      description: "Daily AI progress monitor focused on leader views, AI news, AI4Science, and AI4Materials",
+      description: "daily AI progress monitor",
       signals: "AI monitoring, automation, web publishing",
     },
   ],
@@ -65,7 +64,7 @@ const featuredProjects = new Map([
     "video_darkness_analysis",
     {
       boost: 85,
-      description: "Supporting code for reaction-video optical analysis, including darkness and foam quantification",
+      description: "reaction-video optical analysis",
       signals: "computer vision, materials science, Python",
     },
   ],
@@ -73,7 +72,7 @@ const featuredProjects = new Map([
     "finance-daily-site",
     {
       boost: 60,
-      description: "Automated market briefing pipeline across indices, macro, earnings, sectors, and central banks",
+      description: "automated market briefing pipeline",
       signals: "automation, market data, dashboards",
     },
   ],
@@ -139,26 +138,12 @@ function cleanDescription(description) {
   return `${cleaned.slice(0, 147).replace(/\s+\S*$/, "")}...`;
 }
 
-function escapeMarkdownCell(value) {
-  return String(value).replace(/\|/g, "\\|").replace(/\n/g, " ");
-}
-
 function escapeHtml(value) {
   return String(value)
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
-}
-
-function buildSignalTags(value) {
-  return String(value)
-    .split(",")
-    .map((signal) => signal.trim())
-    .filter(Boolean)
-    .slice(0, 3)
-    .map((signal) => `<code>${escapeHtml(signal)}</code>`)
-    .join(" ");
 }
 
 function scoreRepo(repo) {
@@ -210,24 +195,12 @@ function buildProjectBlock(repos) {
       };
     });
 
-  const rows = [];
-  for (let index = 0; index < cards.length; index += 2) {
-    const pair = cards.slice(index, index + 2);
-    rows.push("  <tr>");
-    pair.forEach((repo) => {
-      rows.push("    <td width=\"50%\" valign=\"top\">");
-      rows.push(`      <a href="${escapeHtml(repo.url)}"><strong>${escapeHtml(repo.name)}</strong></a><br>`);
-      rows.push(`      <sub>${escapeHtml(repo.description)}</sub><br>`);
-      rows.push(`      ${buildSignalTags(repo.topics)}`);
-      rows.push("    </td>");
-    });
-    if (pair.length === 1) {
-      rows.push("    <td width=\"50%\" valign=\"top\"></td>");
-    }
-    rows.push("  </tr>");
-  }
+  const lines = cards.map((repo, index) => {
+    const suffix = index === cards.length - 1 ? "" : "<br>";
+    return `  <a href="${escapeHtml(repo.url)}"><strong>${escapeHtml(repo.name)}</strong></a> &middot; ${escapeHtml(repo.description)}${suffix}`;
+  });
 
-  return [startMarker, "<table>", ...rows, "</table>", endMarker].join("\n");
+  return [startMarker, "<p align=\"center\">", ...lines, "</p>", endMarker].join("\n");
 }
 
 async function main() {

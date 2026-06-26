@@ -1,76 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="330" viewBox="0 0 1100 330" role="img" aria-labelledby="title desc">
-  <title id="title">Yang Bai - self-driving labs and AI for materials science</title>
-  <desc id="desc">A clean profile banner showing closed-loop research systems from autonomous experiments to models and decisions.</desc>
-  <defs>
-    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f8fafc"/>
-      <stop offset="1" stop-color="#eef6f4"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f766e"/>
-      <stop offset="0.55" stop-color="#2563eb"/>
-      <stop offset="1" stop-color="#e11d48"/>
-    </linearGradient>
-    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.12"/>
-    </filter>
-    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M 34 0 L 0 0 0 34" fill="none" stroke="#dbe5ee" stroke-width="1" opacity="0.65"/>
-    </pattern>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="260" viewBox="0 0 1100 260" role="img" aria-labelledby="title desc">
+  <title id="title">Yang Bai - self-driving labs for materials discovery</title>
+  <desc id="desc">Minimal profile banner with a closed-loop research diagram.</desc>
+  <rect x="1" y="1" width="1098" height="258" rx="24" fill="#ffffff" stroke="#d8dee4" stroke-width="2"/>
 
-  <rect width="1100" height="330" rx="28" fill="url(#paper)"/>
-  <rect width="1100" height="330" rx="28" fill="url(#grid)" opacity="0.72"/>
-  <path d="M0 271 C158 232 273 294 423 252 C583 207 710 226 848 191 C961 162 1021 118 1100 131 L1100 330 L0 330 Z" fill="#dff3ef" opacity="0.7"/>
-  <path d="M0 292 C162 254 291 314 443 274 C591 235 716 254 873 210 C962 185 1036 143 1100 153" fill="none" stroke="#0f766e" stroke-width="3" opacity="0.35"/>
-
-  <g transform="translate(56 55)">
-    <rect x="0" y="0" width="516" height="220" rx="22" fill="#ffffff" filter="url(#softShadow)"/>
-    <rect x="0" y="0" width="516" height="220" rx="22" fill="none" stroke="#d8e2eb"/>
-    <rect x="28" y="28" width="116" height="30" rx="15" fill="#e6f4f1"/>
-    <text x="86" y="48" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f766e">RESEARCH SYSTEMS</text>
-
-    <text x="28" y="102" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="48" font-weight="800" fill="#0f172a">Yang Bai</text>
-    <text x="30" y="140" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="650" fill="#334155">Self-driving labs for materials discovery</text>
-    <text x="30" y="174" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748b">Autonomous experiments  |  materials AI  |  research automation</text>
-
-    <g transform="translate(30 193)">
-      <rect x="0" y="0" width="116" height="10" rx="5" fill="#0f766e"/>
-      <rect x="126" y="0" width="72" height="10" rx="5" fill="#2563eb"/>
-      <rect x="208" y="0" width="44" height="10" rx="5" fill="#e11d48"/>
-    </g>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="70" y="104" font-size="54" font-weight="780" fill="#111827">Yang Bai</text>
+    <text x="72" y="144" font-size="21" font-weight="500" fill="#374151">Self-driving labs for materials discovery</text>
+    <text x="72" y="184" font-size="15" fill="#6b7280">autonomous experiments / materials AI / research systems</text>
   </g>
 
-  <g transform="translate(642 48)">
-    <rect x="0" y="0" width="398" height="236" rx="26" fill="#ffffff" filter="url(#softShadow)"/>
-    <rect x="0" y="0" width="398" height="236" rx="26" fill="none" stroke="#d8e2eb"/>
+  <line x1="72" y1="208" x2="418" y2="208" stroke="#e5e7eb" stroke-width="2"/>
+  <line x1="72" y1="208" x2="188" y2="208" stroke="#0f766e" stroke-width="4" stroke-linecap="round"/>
+  <line x1="208" y1="208" x2="282" y2="208" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  <line x1="302" y1="208" x2="346" y2="208" stroke="#e11d48" stroke-width="4" stroke-linecap="round"/>
 
-    <path d="M198 42 C260 42 311 88 315 149" fill="none" stroke="#cbd5e1" stroke-width="9" stroke-linecap="round"/>
-    <path d="M315 149 C315 205 258 221 203 213" fill="none" stroke="#cbd5e1" stroke-width="9" stroke-linecap="round"/>
-    <path d="M203 213 C136 213 86 169 84 110" fill="none" stroke="#cbd5e1" stroke-width="9" stroke-linecap="round"/>
-    <path d="M84 110 C89 63 139 42 198 42" fill="none" stroke="url(#accent)" stroke-width="9" stroke-linecap="round"/>
-    <path d="M304 129 L327 151 L302 171" fill="none" stroke="#64748b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="842" cy="130" r="78" stroke="#d1d5db" stroke-width="7"/>
+    <path d="M842 52 A78 78 0 0 0 764 130" stroke="#111827" stroke-width="7"/>
+    <path d="M908 118 L932 130 L908 142" stroke="#111827" stroke-width="6"/>
+  </g>
 
-    <g font-family="Inter, Segoe UI, Arial, sans-serif">
-      <g transform="translate(167 20)">
-        <rect width="78" height="44" rx="13" fill="#ecfdf5" stroke="#b7e4d8"/>
-        <text x="39" y="27" text-anchor="middle" font-size="13" font-weight="750" fill="#0f766e">Experiment</text>
-      </g>
-      <g transform="translate(278 125)">
-        <rect width="78" height="44" rx="13" fill="#eff6ff" stroke="#bfd2ff"/>
-        <text x="39" y="27" text-anchor="middle" font-size="13" font-weight="750" fill="#2563eb">Data</text>
-      </g>
-      <g transform="translate(159 190)">
-        <rect width="86" height="44" rx="13" fill="#fff7ed" stroke="#fed7aa"/>
-        <text x="43" y="27" text-anchor="middle" font-size="13" font-weight="750" fill="#c2410c">Model</text>
-      </g>
-      <g transform="translate(42 86)">
-        <rect width="86" height="44" rx="13" fill="#fff1f2" stroke="#fecdd3"/>
-        <text x="43" y="27" text-anchor="middle" font-size="13" font-weight="750" fill="#be123c">Decision</text>
-      </g>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="650">
+    <g transform="translate(806 29)">
+      <circle cx="36" cy="24" r="23" fill="#ecfdf5" stroke="#99d8c9"/>
+      <text x="36" y="29" text-anchor="middle" fill="#0f766e">lab</text>
     </g>
-
-    <circle cx="198" cy="128" r="34" fill="#0f172a"/>
-    <path d="M183 130 L195 142 L218 113" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(902 106)">
+      <circle cx="36" cy="24" r="23" fill="#eff6ff" stroke="#b7c8ff"/>
+      <text x="36" y="29" text-anchor="middle" fill="#2563eb">data</text>
+    </g>
+    <g transform="translate(806 183)">
+      <circle cx="36" cy="24" r="23" fill="#fff7ed" stroke="#fed7aa"/>
+      <text x="36" y="29" text-anchor="middle" fill="#c2410c">model</text>
+    </g>
+    <g transform="translate(710 106)">
+      <circle cx="36" cy="24" r="23" fill="#fff1f2" stroke="#fecdd3"/>
+      <text x="36" y="29" text-anchor="middle" fill="#be123c">next</text>
+    </g>
   </g>
 </svg>

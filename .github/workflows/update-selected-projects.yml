@@ -20,7 +20,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: Yang1Bai
-          PROJECT_LIMIT: 6
+          PROJECT_LIMIT: 4
 
       - name: Commit README changes
         run: |
